@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class="logo">Sami Kasasbeh</div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href="./Index.html">About</a></li>
+                <li><a href="./Project.html">Experience</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                 
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="mobile-nav">
+        <div class="logo">Sami Kasasbeh</div>
+        <div class = "mobile-menu">
+            <div class="mobile-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            
+            </div>
+
+            <div class = "menu-lists">
+                <li><a href="./Index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="./Project.html" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="./Contact.html" onclick="toggleMenu()">Contact</a></li>
+                
+            </div>
+        </div>
+    </nav>
+    <section id="landing">
+        <div class="profileContainer">
+            <img src="./Assets/Images/PP.png" alt="Sami's profile picure">
+        </div>
+        <div class="textContainer">
+            <p class="textSec1">Hello, I'm</p>
+            <h1 class ="title">Sami Kasasbeh</h1>
+            <p class="textSec2">I am a Computer Science student and a FullStack developer!</p>
+        
+            <div class="btnContainer">
+                <button class = "btn btn2" onclick="notifyUserAndOpenResume()">Download CV
+                </button>
+                <button class = "btn btn1" ><a href="./">Contact me!</a>
+                </button>
+            </div>
+            <div id="containerSocials">
+                <img src="./Assets/Images/linkedin.png" alt="linkedin Logo" id="icon"
+                 onclick= "location.href= 'https://linkedin.com/in/sami-kasasbeh-73b3b9193'">
+                <img src="./Assets/Images/github.png" alt="Github Logo" id="icon"
+                onclick= "location.href= 'https://github.com/samikasasbeh'">
+                
+
+            </div>
+
+            <div class="containerBtn">
+                <button class="btn btn3" id="darkModeToggle">Night mode</button>
+                <button class="btn btn4" id="funModeToggle">Fun Mode</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

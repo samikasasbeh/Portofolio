@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class="logo">Sami Kasasbeh</div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href="./Index.html">About</a></li>
+                <li><a href="./Project.html">Experience</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                 
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="mobile-nav">
+        <div class="logo">Sami Kasasbeh</div>
+        <div class = "mobile-menu">
+            <div class="mobile-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            
+            </div>
+
+            <div class = "menu-lists">
+                <li><a href="./Index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="./Project.html" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="./Contact.html" onclick="toggleMenu()">Contact</a></li>
+                
+            </div>
+        </div>
+    </nav>
+    <section id="landing">
+      <!-- Image by Dalhousie University's logo -->
+        <div class="profileContainer">
+          <img src="./Assets/Images/experience.png" alt="">
+        </div>
+        <div class="textContainer">
+          <p class="textSec1">About Me</p>
+          <h1 class ="title">Education</h1>
+          <p class="textSec1">I am a third year Computer Science student at Dalhousise University! My skills rating is down below!</p>
+          
+        </div> 
+
+        
+    </section>
+    
+    <section id="landing2">
+      <h1 class="title"> Skills include:</h1>
+      <br>
+      <br>
+      <br>
+      <p class="textSec1"> JavaScript, HTML, CSS, Next.JS, React, MySql, Java, and Python</p>
+      <br>
+      <br>
+        <div class="imagesContainer">
+          
+          <img src="./Assets/Images/skills/html.jpg">
+          <img src="./Assets/Images/skills/java.jpg">
+          <img src="./Assets/Images/skills/js.png">
+          
+          
+          
+        </div>
+     
+
+    </section>
+
+      <script src="script.js"></script>
+</body>
+</html>

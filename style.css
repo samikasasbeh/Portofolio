@@ -1,0 +1,380 @@
+/* General (all page)*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(85, 85, 85);
+}
+
+a, .btn{
+    transition: all 300ms ease;
+}
+
+/* NAV */
+
+nav, .nav-links{
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white ;
+}
+
+a:hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover{
+    color: grey ;
+    cursor: pointer;
+}
+
+/* Mobile Nav */
+#mobile-nav { 
+    display: none;
+}
+
+.mobile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.mobile-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}   
+
+.mobile-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-lists {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white ;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-lists a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-lists li {
+    list-style: none;
+
+}
+
+.menu-lists.open{
+    max-height: 300px;
+}
+.mobile-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.mobile-icon.open span:nth-child(2){
+    opacity: 0;
+}
+.mobile-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+.mobile-icon span:first-child{
+    transform: none;
+}
+
+.mobile-icon span:first-child{
+    opacity: 1;
+}
+.mobile-icon span:first-child{
+    transform: none;
+}
+
+
+
+/* Main body */
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+.section-container {
+    display: flex;
+}
+
+/*PROFILE SECTION*/
+ #landing{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+ }
+
+ .profileContainer{
+    display:flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+
+ }
+
+ .profileContainer img{
+    height: 325px;
+    width: 325px;
+    border-radius: 50%;
+ }
+
+ .textContainer{
+    align-self: center;
+    text-align: center;
+ }
+ .textContainer p{
+    font-weight: 600;
+ }
+ .textSec1{
+    text-align: center;
+ }
+
+ .textSec2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+ }
+ .title{
+    font-size: 3rem;
+    text-align: center;
+ }
+
+ #containerSocials{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap:1rem;
+ }
+ #icon{
+    height: 2rem;
+    cursor: pointer;
+ }
+
+ .btnContainer{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+ }
+ .btn {
+    font-weight: 400;
+    transition: all 300ms ease;
+    padding: 1rem;
+    border-radius: 35%;
+    cursor: pointer;
+ }
+
+ .btn3  {
+    border: 1px;
+    border-radius: 0;
+    margin-top: 25px;
+    
+ }
+ .btn4{
+    border: 1px;
+    border-radius: 0;
+    margin-top: 25px;
+    background-color: white;
+    
+ }
+
+ .dark-mode {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color for contrast */
+}
+.fun-Mode{
+background: linear-gradient(
+  to right, 
+  rgb(255, 5, 46) 20%, 
+  rgb(196, 21, 211) 50%, /* Pink fills the left 30% */
+  rgb(231, 130, 209) 80%, /* Transition to paleturquoise at 30% */
+  rgb(252, 252, 252) 100% /* Fill the rest with paleturquoise */
+);
+}
+
+/*Landing 2*/
+
+#landing2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    height: auto; 
+    padding: 20px; 
+}
+.imagesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px; 
+    width: 100%; 
+    max-width: 960px; 
+    margin: 0 auto; 
+}
+
+.imagesContainer img {
+    
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+#formContainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: rgb(223, 221, 219);
+    align-items: center;
+    border-radius: 5%;
+}
+
+label, input, textarea {
+    width: 80%; /* Makes each element take the full width */
+    margin: 5px 0; /* Adds a little space above and below each element */
+    align-items: center;
+}
+input{
+    height: 25px;
+    border-radius: 5px;
+    border: #fff;
+    transition: all 1.4 ease-in;
+}
+textarea{
+    transition: all 1.4 ease-in;
+}
+
+textarea:hover{
+    color: #797575;
+
+}
+input:hover{
+    
+    color: #797575;
+}
+
+
+/*media queries */
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #mobile-nav{
+        display: flex;
+    }
+}
+
+/* Tablet devices */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-links {
+        gap: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    section {
+        margin: 0 5rem; 
+    }
+
+    #landing {
+        gap: 3rem; 
+    }
+
+    .profileContainer img {
+        height: 200px;
+        width: 200px; 
+    }
+
+    .textSec2, .title {
+        font-size: 1.5rem; 
+    }
+}
+
+/* Mobile devices  */
+@media screen and (max-width: 768px) {
+    section {
+        margin: 0 2rem; 
+    }
+
+    #landing {
+        flex-direction: column; 
+        gap: 2rem;
+        height: auto; 
+    }
+
+    .profileContainer, .profileContainer img {
+        height: 150px;
+        width: 150px; 
+    }
+
+    .textContainer p, .textContainer h1 {
+        text-align: left; 
+    }
+
+    .textSec2, .title {
+        font-size: 1.2rem; 
+    }
+
+    .btnContainer {
+        flex-direction: column; 
+    }
+
+    #formContainer, .label, input, textarea {
+        width: 100%; 
+    }
+}
